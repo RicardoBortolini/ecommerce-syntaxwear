@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    /* Fontes */
+    --font-principal: 'Ubuntu', sans-serif;
+    --font-secundaria: 'Open Sans', sans-serif;
+
+    /* Cores */
+    --cor-primaria: #6c63ff;    /* Roxo suave (tech) */
+    --cor-secundaria: #2f2e41;  /* Azul escuro (dark mode feeling) */
+    --cor-fundo: #f8f9fa;      /* Cinza muito claro */
+    --cor-texto: #2d3436;      /* Grafite para melhor leitura */
+    --cor-branco: #ffffff;
+    --cor-preto: #000000;
+    
+    /* Espaçamentos e Bordas */
+    --espacamento-padrao: 1rem;
+    --raio-borda: 8px;
+}
