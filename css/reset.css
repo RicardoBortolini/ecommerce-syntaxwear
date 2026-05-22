@@ -1,0 +1,94 @@
+/* Modern CSS Reset por Andy Bell
+   Fonte: https://piccalil.li/blog/a-more-modern-css-reset/
+*/
+
+/* Regras de Box sizing (modelo de caixa) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Previne o aumento automático da fonte em dispositivos móveis */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove margens padrão para dar mais controle ao CSS autoral */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove estilos de lista em elementos ul e ol que tenham um role='list' */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Configurações padrão essenciais do body */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Altura de linha menor para títulos e elementos interativos */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balanceamento de quebra de texto em títulos */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* Links que não possuem classe recebem estilos padrão */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Facilita o trabalho com imagens (tornando-as responsivas por padrão) */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Herda fontes para inputs, botões e outros elementos de formulário */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Garante que textareas sem o atributo 'rows' não fiquem minúsculos */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Adiciona uma margem de rolagem para elementos ancorados (links internos) */
+:target {
+  scroll-margin-block: 5ex;
+}
