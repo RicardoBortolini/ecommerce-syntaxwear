@@ -67,6 +67,16 @@ a:not([class]) {
   color: currentColor;
 }
 
+a {
+  text-decoration: none;
+
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
 /* Facilita o trabalho com imagens (tornando-as responsivas por padrão) */
 img,
 picture {
