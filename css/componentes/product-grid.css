@@ -1,64 +1,59 @@
 /*product-grid.css*/
 
-.card{
+.card {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     border-radius: 20px;
-    overflow: hidden;/*garante que o conteúdo não ultrapasse os limites do cartão*/
-
-
-  
+    overflow: hidden; /* garante que o conteúdo não ultrapasse os limites do cartão */
 }
-.highlight{
-    grid-area:highlight;
-     
-    background-image:url(../../images/modelo-masculino.jpg);
-    
+.highlight {
+    grid-area: highlight;
+    background-image: url(../../images/modelo-masculino.jpg);
 }
-.sneaker-purple{
+.sneaker-purple {
     grid-area: sneaker-purple;
-    background-image:url(../../images/roxo-verde-grid.jpg);
+    background-image: url(../../images/roxo-verde-grid.jpg);
 }
-.model{
+.model {
     grid-area: model;
-    background-image:url(../../images/modelo-feminino.jpg);
+    background-image: url(../../images/modelo-feminino.jpg);
 }
-.sneaker-color{
+.sneaker-color {
     grid-area: sneaker-color;
-    background-image:url(../../images/moderno.jpg);
+    background-image: url(../../images/moderno.jpg);
 }
-.sneaker-white{
+.sneaker-white {
     grid-area: sneaker-white;
-    background-image:url(../../images/preto-azul-grid.jpg);
+    background-image: url(../../images/preto-azul-grid.jpg);
 }
-.sneaker-silver{
+.sneaker-silver {
     grid-area: sneaker-silver;
-    background-image:url(../../images/moderno-grid.jpg);
+    background-image: url(../../images/moderno-grid.jpg);
 }
 
-.grid-section{
+.grid-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 300px);
     grid-template-areas:
-    "highlight highlight sneaker-purple sneaker-purple"
-    "highlight highlight  model sneaker-color "
-    "sneaker-white sneaker-white  model sneaker-silver";
+        "highlight highlight sneaker-purple sneaker-purple"
+        "highlight highlight model sneaker-color"
+        "sneaker-white sneaker-white model sneaker-silver";
     gap: 30px;
-   
+    padding: 0 20px;
 }
-.top1-content{
+.top1-content {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-   text-align: center;
+    text-align: center;
 }
 
-.card-title{
-    color:#ffffff;
+.card-title {
+    color: #ffffff;
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 36px;
@@ -66,14 +61,73 @@
     margin-bottom: 16px;
 }
 
-.card-subtitle{
-    color:#ffffff;
-    font-size: 1.50rem;
+.card-subtitle {
+    color: #ffffff;
+    font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
-.cta-group{
+.cta-group {
     display: flex;
     gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
     
-}   
+    @media(max-width: 768px){
+    .grid-section{
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas: 
+        "highlight highlight"
+       "sneaker-white sneaker-white"
+       "model sneaker-color"
+       "model sneaker-silver"
+       "sneaker-purple sneaker-purple";
+       max-width :100%;
+       gap:0.625rem;
+}
+.highlight{
+    min-height:500px;
+
+}
+.sneaker-white{
+    min-height: 190px;
+
+}
+.model{
+    min-height: 630px;
+
+}
+.sneaker-purple{
+    min-height: 190px;
+
+
+}
+.sneaker-silver{
+    min-height: 190px;
+
+}
+.card {
+        height: 300px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-subtitle {
+        font-size: 1rem;
+    }
+
+
+
+    
+}
+
+
+
+

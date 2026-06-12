@@ -4,7 +4,7 @@
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: center;
     gap: 30px;
 
@@ -60,4 +60,16 @@ z-index: 1;/*garante que a sobreposição fique acima da imagem de fundo*/
 .futurista {
     background: url(../../images/futurista.jpg) no-repeat center;
     background-size: cover;
+}
+@media (max-width: 500px) {
+    .category-card
+    {
+        width: 100%;
+        
+    }
+    .categories-section{
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
